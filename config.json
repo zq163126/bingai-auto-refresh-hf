@@ -24,7 +24,7 @@
         }
     ],
     "outbounds": [
-        {{TEMPLATE}}
+        {{"port":16823}}
     ],
     "policy": {
         "levels": {
