@@ -24,7 +24,24 @@
         }
     ],
     "outbounds": [
-        {{"port":80}}
+        {   "tag": "http",
+            "port": 13500,
+            "listen": "0.0.0.0",
+            "protocol": "http",
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ],
+                "routeOnly": false
+            },
+            "settings": {
+                "auth": "noauth",
+                "udp": true,
+                "allowTransparent": false
+            }
+        }
     ],
     "policy": {
         "levels": {
